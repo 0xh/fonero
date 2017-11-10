@@ -409,6 +409,7 @@ namespace nodetool
     std::set<std::string> full_addrs;
     if (testnet)
     {
+      full_addrs.insert("node.fonero.org:28180");
       full_addrs.insert("80.87.199.55:28180");
       full_addrs.insert("92.63.103.7:28180");
       full_addrs.insert("78.24.220.170:28180");
@@ -417,6 +418,7 @@ namespace nodetool
     }
     else
     {
+      full_addrs.insert("node.fonero.org:18180");
       full_addrs.insert("80.87.199.55:18180");
       full_addrs.insert("92.63.103.7:18180");
       full_addrs.insert("78.24.220.170:18180");
