@@ -9,7 +9,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers.
 ## Development Resources
 
 - Web: [http://fonero.org](http://fonero.org)
-- Blocks: [http://blocks.fonero.org](http://fonero.org:8081)
+- Blocks: [http://blocks.fonero.org](http://blocks.fonero.org)
 - Pool: [http://pool.fonero.org](http://pool.fonero.org)
 - GitHub: [https://github.com/fonero-project/fonero](https://github.com/fonero-project/fonero)
 - GitHub Pool: [https://github.com/fonero-project/fonero-pool](https://github.com/fonero-project/fonero-pool)
