@@ -237,7 +237,7 @@ bool test_generator::construct_block_manually(block& blk, const block& prev_bloc
   else
   {
     size_t current_block_size = txs_sizes + get_object_blobsize(blk.miner_tx);
-    // TODO: This will work, until size of constructed block is less then CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE
+    // TODO: This will work, until size of constructed block is less then CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1
     if (!construct_miner_tx(height, misc_utils::median(block_sizes), already_generated_coins, current_block_size, block_fees, miner_acc.get_keys().m_account_address, blk.miner_tx, blobdata(), hf_version))
       return false;
   }
@@ -540,7 +540,7 @@ bool construct_miner_tx_manually(size_t height, uint64_t already_generated_coins
   in.height = height;
   tx.vin.push_back(in);
 
-  // This will work, until size of constructed block is less then CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE
+  // This will work, until size of constructed block is less then CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1
   uint64_t block_reward;
   if (!get_block_reward(0, 0, already_generated_coins, block_reward, 1, 0))
   {

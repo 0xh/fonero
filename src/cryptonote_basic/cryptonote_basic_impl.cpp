@@ -69,7 +69,11 @@ namespace cryptonote {
   //-----------------------------------------------------------------------------------------------
   size_t get_min_block_size(uint8_t version)
   {
-    return CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
+    if (version == 1) {
+        return CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1;
+    } else if (version == 2) {
+        return CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2;
+    }
   }
   //-----------------------------------------------------------------------------------------------
   size_t get_max_block_size()

@@ -87,7 +87,8 @@ static const struct {
   uint8_t threshold;
   time_t time;
 } mainnet_hard_forks[] = {
-  { 1, 1, 0, 1510160262 }
+  { 1, 1, 0, 1510160262 },
+  { 2, 10537, 0, 1511328836 }
 };
 
 static const struct {
@@ -96,7 +97,8 @@ static const struct {
   uint8_t threshold;
   time_t time;
 } testnet_hard_forks[] = {
-  { 1, 1, 0, 1510160283 }
+  { 1, 1, 0, 1510160283 },
+  { 2, 4, 0, 1511328836 }
 };
 
 //------------------------------------------------------------------
